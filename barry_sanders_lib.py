@@ -4,27 +4,19 @@ Problem
 import csv
 
 def read_csv_into_dict(filename):
+    """
+    Take in the filename and read the data
+    from it (csv) and populate a dictionary
+    with the key being the year and the
+    value being a TUPLE containing all the individual
+    values of each row (basically the full row as
+    a tuple)
+    """
     my_dict = {}
-    with open(filename, 'r') as infile:
-        reader = csv.reader(infile)
-        next(reader)
-        for row in reader:
-            year = int(row[0])
-            age = row[1]
-            team = row[2]
-            games = row[3]
-            rushes = row[4]
-            rush_yards = row[5]
-            rush_tds = row[6]
-            targets = row[7]
-            receptions = row[8]
-            rec_yards = row[9]
-            rec_tds = row[10]
 
-            row_data = ( row[0], row[1], row[2], row[4], row[4], row[5], row[6], row[7], row[8], row[9], row[10])
-
-            my_dict[year] = row_data
+    # TODO: read and populate the dictionary
     return my_dict
+
 
 def tally_the_stats(row):
     """
@@ -59,6 +51,3 @@ def spew_season(player_name, row):
     format.
     """
     print(f'{player_name}')
-
-
-
