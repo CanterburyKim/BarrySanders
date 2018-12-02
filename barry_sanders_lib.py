@@ -18,6 +18,28 @@ def read_csv_into_dict(filename):
     return my_dict
 
 
+def find_year_with_most_rush_yards(player_dict):
+    """
+    take in the dictionary which has year as the
+    key and the row data as the value.  The
+    sixth item in a row is the rushing yards
+    Go thru each row and find the year with the
+    most yards.
+    return the year with the most rushing yards
+    """
+    return 1998
+
+def find_year_with_most_rush_tds(player_dict):
+    """
+    take in the dictionary of player seasons
+    with the year being the key.  The seventh
+    item in each row is the number of tds for the
+    season.
+    Find the season with the most rushing TDs
+    return the year with the most rushing TDs
+    """
+    return 1998
+
 def tally_the_stats(row):
     """
     Takes in a list of data (row) and then uses the following
